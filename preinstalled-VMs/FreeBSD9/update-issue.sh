@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 #
 # pDLNA-utils - utilities for pDLNA (a perl DLNA media server)
 # Copyright (C) 2010-2013 Stefan Heumader <stefan@heumader.at>
@@ -17,16 +17,16 @@
 # along with this program. If not, see <http://www.gnu.org/licenses/>.
 #
 
-UNAME=`/bin/uname -a`
+UNAME=`/usr/bin/uname -o -r -i -n`
 HOSTNAME=`/bin/hostname`
-IPADDR=`/sbin/ifconfig eth0 | sed '/Bcast/!d' | awk '{print $2}'| awk '{print $2}' FS=":"`
+IPADDR=`/sbin/ifconfig em0 | grep inet | awk '{ print $2 }'`
 PDLNAVERSION=`/bin/cat /home/pdlna/pDLNA/VERSION`
 
 /bin/echo "" > /etc/issue
 /bin/echo "" >> /etc/issue
 /bin/echo "###########################################################" >> /etc/issue
 /bin/echo "#" >> /etc/issue
-/bin/echo "#                Debian GNU/Linux 6" >> /etc/issue
+/bin/echo "#                       FreeBSD 9" >> /etc/issue
 /bin/echo "# ${UNAME}" >> /etc/issue
 /bin/echo "#" >> /etc/issue
 /bin/echo "#              pDLNA v${PDLNAVERSION}" >> /etc/issue
@@ -43,7 +43,7 @@ PDLNAVERSION=`/bin/cat /home/pdlna/pDLNA/VERSION`
 /bin/echo "" >> /etc/issue.net
 /bin/echo "###########################################################" >> /etc/issue.net
 /bin/echo "#" >> /etc/issue.net
-/bin/echo "#                Debian GNU/Linux 6" >> /etc/issue.net
+/bin/echo "#                       FreeBSD 9" >> /etc/issue.net
 /bin/echo "# ${UNAME}" >> /etc/issue.net
 /bin/echo "#" >> /etc/issue.net
 /bin/echo "#              pDLNA v${PDLNAVERSION}" >> /etc/issue.net

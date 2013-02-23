@@ -1,6 +1,6 @@
 #!/bin/bash
 #
-# pDLNA-utils - utilities for a perl DLNA media server
+# pDLNA-utils - utilities for pDLNA (a perl DLNA media server)
 # Copyright (C) 2010-2013 Stefan Heumader <stefan@heumader.at>
 #
 # This program is free software: you can redistribute it and/or modify
