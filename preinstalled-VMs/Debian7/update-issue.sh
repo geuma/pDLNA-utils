@@ -26,7 +26,7 @@ PDLNAVERSION=`/bin/cat /home/pdlna/pDLNA/VERSION`
 /bin/echo "" >> /etc/issue
 /bin/echo "###########################################################" >> /etc/issue
 /bin/echo "#" >> /etc/issue
-/bin/echo "#                       CentOS 6" >> /etc/issue
+/bin/echo "#                Debian GNU/Linux 7" >> /etc/issue
 /bin/echo "# ${UNAME}" >> /etc/issue
 /bin/echo "#" >> /etc/issue
 /bin/echo "#              pDLNA v${PDLNAVERSION}" >> /etc/issue
@@ -43,7 +43,7 @@ PDLNAVERSION=`/bin/cat /home/pdlna/pDLNA/VERSION`
 /bin/echo "" >> /etc/issue.net
 /bin/echo "###########################################################" >> /etc/issue.net
 /bin/echo "#" >> /etc/issue.net
-/bin/echo "#                       CentOS 6" >> /etc/issue.net
+/bin/echo "#                Debian GNU/Linux 7" >> /etc/issue.net
 /bin/echo "# ${UNAME}" >> /etc/issue.net
 /bin/echo "#" >> /etc/issue.net
 /bin/echo "#              pDLNA v${PDLNAVERSION}" >> /etc/issue.net
